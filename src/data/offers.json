@@ -1,0 +1,14 @@
+{
+  "FR1": {
+    "id": "buy-one-get-one-free",
+    "discount": "100%",
+    "details": "Buy one Fruit tea and get the second one for free.",
+    "condition": "mod2"
+  },
+  "SR1": {
+    "id": "three-or-more",
+    "discount": "10%",
+    "details": "If you buy 3 or more strawberries, the price drops to £4.50.",
+    "condition": "min3"
+  }
+}

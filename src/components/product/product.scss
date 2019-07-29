@@ -1,0 +1,105 @@
+.product {
+  width: 120px;
+  height: 110px;
+  
+  position: absolute;
+
+  animation: pulsate 9000ms ease-in-out infinite;
+
+  &:hover {
+    animation-play-state: paused;
+
+    > button,
+    > h2 {
+      display: block;
+    }
+  }
+
+  &.coffee {
+    top: 679px;
+    left: 454px;
+
+    background: url('../../images/products/coffee.png') no-repeat center center;
+    animation-delay: random(3000) + ms;
+  }
+
+  &.fruit-tea {
+    top: 205px;
+    left: 76px;
+
+    background: url('../../images/products/fruit-tea.png') no-repeat center center;
+    animation-delay: random(3000) + ms;
+  }
+
+  &.strawberries {
+    top: 216px;
+    left: 313px;
+
+    background: url('../../images/products/strawberries.png') no-repeat center center;
+    animation-delay: random(3000) + ms;
+  }
+
+  > button,
+  > h2 {
+    display: none;
+  }
+
+  > h2 {
+    position: absolute;
+    top: -10px;
+
+    padding: 5px;
+
+    background: $color-white;
+    border-radius: $border-radius;
+    font-size: 18px;
+    font-weight: 700;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 40px;
+
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 6px 6px 0 6px;
+      border-color: $color-white transparent transparent transparent;
+    }
+  }
+
+  > button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    border: 0;
+    color: $color-black;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+
+    box-shadow: 5px 5px 0 $color-highlight;
+    transform: skewX(10deg);
+
+    &:hover {
+      background: darken($color-white, 10);
+    }
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+
+  2% {
+    transform: scale(1.8) rotate(10deg);
+  }
+
+  4% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+

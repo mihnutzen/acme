@@ -1,0 +1,29 @@
+.basket {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-350px);
+  padding: 20px;
+
+  background: $color-white;
+  border-radius: $border-radius;
+
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  .item {
+    margin-bottom: 5px;
+
+    &:first-of-type {
+      margin-top: 10px;
+    }
+
+    &:last-of-type {
+      border-bottom: 1px solid $color-black;
+      margin-bottom: 10px;
+    }
+  }
+}

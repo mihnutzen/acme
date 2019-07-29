@@ -1,0 +1,22 @@
+.supermarket {
+  position: relative;
+
+  width: 700px;
+  height: 1050px;
+  margin: 0 auto;
+
+  background: url('../../images/products-oos.jpg') no-repeat center top;
+}
+
+.logo {
+  width: 700px;
+  height: 232px;
+  overflow: hidden;
+
+  position: absolute;
+  top: 410px;
+  left: 0;
+
+  background: url('../../images/logo.png') no-repeat center top;
+  text-indent: -90000px;
+}
